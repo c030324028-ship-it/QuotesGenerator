@@ -19,7 +19,7 @@ def QuotesGenerator():
 
 def Menu():
     os.system('cls')
-    print("====== Quotes QuotesGenerator =======")
+    print("====== Quotes Generator =======")
     print("Jenis quotes")
     print("1. Agama")
     print("2. Pendidikan")
@@ -74,11 +74,17 @@ def Quotes(opsi, jumlah):
     quotes = random.sample(listQuotes, k=jumlah)
 
     for i in range(jumlah):
-        print(f"Quote ke-{i + 1}:")
         quote = quotes[i]
 
         teksQuote = quote["teks"]
         tokohQuote = quote["tokoh"]
+        jenisQuote = quote["jenis"]
+
+        if (opsi == "random"):
+            print(f"Quote ke-{i + 1} ({jenisQuote}):")
+        else:
+            print(f"Quote ke-{i + 1}:")
+
         print(f'"{teksQuote}"\n~ {tokohQuote}\n')
 
     Konfirmasi()
