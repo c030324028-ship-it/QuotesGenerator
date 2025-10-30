@@ -217,8 +217,8 @@ quotesPolitik = [
         "jenis": "Politik"
     },
     {
-        "teks": "",
-        "tokoh": "",
+        "teks": "Testis",
+        "tokoh": "Mmamah",
         "jenis": "Politik"
     },
     {
