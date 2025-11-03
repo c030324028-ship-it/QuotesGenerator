@@ -1,12 +1,12 @@
 quotesAgama = [
     {
-        "teks": "",
-        "tokoh": "",
+        "teks": "Aku sudah pernah merasakan semua kepahitan dalam hidup dan yang paling pahit ialah berharap kepada manusia.",
+        "tokoh": "Ali bin Abi Thalib",
         "jenis": "Agama"
     },
     {
-        "teks": "",
-        "tokoh": "",
+        "teks": "Katakanlah, 'Sesungguhnya kematian yang kamu lari darinya pasti akan menemuimu. Kamu kemudian akan dikembalikan kepada Yang Maha Mengetahui yang gaib dan yang nyata, lalu Dia beritakan kepadamu apa yang selama ini kamu kerjakan.'",
+        "tokoh": "Al-Qur'an, Surah Al-Jumu'ah ayat 8",
         "jenis": "Agama"
     },
     {
@@ -20,12 +20,12 @@ quotesAgama = [
         "jenis": "Agama"
     },
     {
-        "teks": '"Kesabaran itu bukan saat kita tidak marah, tapi saat kita mampu menahan diri dari hal yang salah."',
+        "teks": "Kesabaran itu bukan saat kita tidak marah, tapi saat kita mampu menahan diri dari hal yang salah.",
         "tokoh": "Habib Ali Zainal Abidin Al Jufri",
         "jenis": "Agama"
     },
     {
-        "teks": '"Tuhan tidak akan mengubah nasib suatu kaum sebelum mereka mengubah apa yang ada pada diri mereka sendiri."',
+        "teks": "Tuhan tidak akan mengubah nasib suatu kaum sebelum mereka mengubah apa yang ada pada diri mereka sendiri.",
         "tokoh": "Al-Qur'an, Surah Ar-Ra’d ayat 11",
         "jenis": "Agama"
     },
@@ -53,13 +53,13 @@ quotesAgama = [
 
 quotesPendidikan = [
     {
-        "teks": "",
-        "tokoh": "",
+        "teks": "Mendidik pikiran tanpa mendidik hati bukanlah pendidikan sama sekali.",
+        "tokoh": "Aristoteles",
         "jenis": "Pendidikan"
     },
     {
-        "teks": "",
-        "tokoh": "",
+        "teks": "Hidup itu seperti bersepeda. Jika ingin menjaga keseimbanganmu, kamu harus terus bergerak maju.",
+        "tokoh": "Albert Einstein",
         "jenis": "Pendidikan"
     },
     {
@@ -93,12 +93,12 @@ quotesPendidikan = [
         "jenis": "Pendidikan"
     },
     {
-        "teks": '"Pendidikan adalah senjata paling mematikan di dunia, karena dengan pendidikan, Anda dapat mengubah dunia."',
+        "teks": "Pendidikan adalah senjata paling mematikan di dunia, karena dengan pendidikan, Anda dapat mengubah dunia.",
         "tokoh": "Nelson Mandela",
         "jenis": "Pendidikan"
     },
     {
-        "teks": '"Hiduplah seakan kamu akan mati besok, belajarlah seakan kamu hidup selamanya."',
+        "teks": "Hiduplah seakan kamu akan mati besok, belajarlah seakan kamu hidup selamanya.",
         "tokoh": "Mahatma Gandh",
         "jenis": "Pendidikan"
     }
@@ -106,13 +106,13 @@ quotesPendidikan = [
 
 quotesMotivasi = [
     {
-        "teks": "",
-        "tokoh": "",
+        "teks": "Hal yang paling aku sukai dalam hidup tidaklah membutuhkan banyak uang. Sudah jelas bahwa sumber daya yang kita semua miliki dan yang paling berharga adalah waktu.",
+        "tokoh": "Steve Jobs",
         "jenis": "Motivasi"
     },
     {
-        "teks": "",
-        "tokoh": "",
+        "teks": "Jika tidak menyerah kamu masih memiliki kesempatan, sebab menyerah adalah kegagalan terbesar.",
+        "tokoh": "Jack Ma",
         "jenis": "Motivasi"
     },
     {
@@ -159,13 +159,13 @@ quotesMotivasi = [
 
 quotesPercintaan = [
     {
-        "teks": "",
-        "tokoh": "",
+        "teks": "Kamu tahu kamu sedang jatuh cinta ketika kamu tidak bisa tidur karena kenyataan akhirnya lebih baik daripada mimpi-mimpimu.",
+        "tokoh": "Dr. Seuss",
         "jenis": "Percintaan"
     },
     {
-        "teks": "",
-        "tokoh": "",
+        "teks": "Cinta bukanlah tentang saling memandang, tetapi tentang melihat ke arah yang sama.",
+        "tokoh": "Antoine de Saint-Exupery",
         "jenis": "Percintaan"
     },
     {
@@ -189,22 +189,22 @@ quotesPercintaan = [
         "jenis": "Percintaan"
     },
     {
-        "teks": '"Cinta tidak berupa tatapan satu sama lain, tetapi memandang keluar bersama ke arah yang sama."',
+        "teks": "Cinta tidak berupa tatapan satu sama lain, tetapi memandang keluar bersama ke arah yang sama.",
         "tokoh": "B.J. Habibie",
         "jenis": "Percintaan"
     },
     {
-        "teks": '"Cinta tidak pernah menuntut, cinta selalu memberi. Cinta selalu menderita, tanpa pernah meratap, tanpa pernah mendendam."',
+        "teks": "Cinta tidak pernah menuntut, cinta selalu memberi. Cinta selalu menderita, tanpa pernah meratap, tanpa pernah mendendam.",
         "tokoh": "Mahatma Gandhi",
         "jenis": "Percintaan"
     },
     {
-        "teks": '"Janganlah kalian menikahi Wanita karena kecantikannya, karena mungkin saja kecantikannya akan membinasakannya. Dan jangan pula kalian menikahi Wanita karena hartanya, karena mungkin saja hartanya akan menjadikannya bersikap sewenang-wenang. Akan tetapi, nikahilah Wanita itu karena agamanya."',
+        "teks": "Janganlah kalian menikahi Wanita karena kecantikannya, karena mungkin saja kecantikannya akan membinasakannya. Dan jangan pula kalian menikahi Wanita karena hartanya, karena mungkin saja hartanya akan menjadikannya bersikap sewenang-wenang. Akan tetapi, nikahilah Wanita itu karena agamanya.",
         "tokoh": "Ali bin Abi Thalib",
         "jenis": "Percintaan"
     },
     {
-        "teks": '"Cintailah kekasihmu sekadarnya saja, siapa tahu nanti akan jadi musuhmu. Dan bencilah musuhmu sekadarnya saja, siapa tahu nanti akan jadi kekasihmu."',
+        "teks": "Cintailah kekasihmu sekadarnya saja, siapa tahu nanti akan jadi musuhmu. Dan bencilah musuhmu sekadarnya saja, siapa tahu nanti akan jadi kekasihmu.",
         "tokoh": "Ali bin Abi Thalib",
         "jenis": "Percintaan"
     }
@@ -212,22 +212,22 @@ quotesPercintaan = [
 
 quotesPolitik = [
     {
-        "teks": "",
-        "tokoh": "",
+        "teks": "Satu dua diantara berbagai ukuran yang biasanya kita pakai terhadap seseorang yang terjun ke depan masyarakat sebagai pemimpin ialah, apakah pertama sekali ia dapat melihat ke depan, dan kedua apakah di cukup mempunyai watak konsekuen untuk memegang pandangannya ke depan itu.",
+        "tokoh": "Tan Malaka",
         "jenis": "Politik"
     },
     {
-        "teks": "",
-        "tokoh": "",
+        "teks": "Perjuanganku melawan penjajah lebih mudah, tidak seperti kalian nanti. Perjuangan kalian akan lebih berat karena melawan bangsa sendiri.",
+        "tokoh": "Mohammad Hatta",
         "jenis": "Politik"
     },
     {
-        "teks": '"Jangan tanya apa yang negara kamu bisa lakukan untukmu; tanyakan apa yang bisa kamu lakukan untuk negaramu"',
+        "teks": "Jangan tanya apa yang negara kamu bisa lakukan untukmu; tanyakan apa yang bisa kamu lakukan untuk negaramu",
         "tokoh": "John F. Kennedy",
         "jenis": "Politik"
     },
     {
-        "teks": '"Dalam perang Anda hanya bisa terbunuh sekali, tapi dalam politik Anda bisa mati berkali-kali"',
+        "teks": "Dalam perang Anda hanya bisa terbunuh sekali, tapi dalam politik Anda bisa mati berkali-kali",
         "tokoh": "Winston Churchill",
         "jenis": "Politik"
     },
@@ -252,12 +252,12 @@ quotesPolitik = [
         "jenis": "Politik"
     },
     {
-        "teks": '"Politik bukanlah mencari kekuasaan, namun memastikan kesejahteraan bagi semua rakyat."',
+        "teks": "Politik bukanlah mencari kekuasaan, namun memastikan kesejahteraan bagi semua rakyat.",
         "tokoh": "B.J. Habibie",
         "jenis": "Politik"
     },
     {
-        "teks": '"Dalam politik, jika Anda ingin sesuatu dikatakan, tanyakan pada seorang pria; jika Anda ingin sesuatu dilakukan, mintalah pada seorang wanita."',
+        "teks": "Dalam politik, jika Anda ingin sesuatu dikatakan, tanyakan pada seorang pria; jika Anda ingin sesuatu dilakukan, mintalah pada seorang wanita.",
         "tokoh": "Margaret Thatcher",
         "jenis": "Politik"
     }
