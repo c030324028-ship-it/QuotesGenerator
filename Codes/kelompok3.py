@@ -1,7 +1,11 @@
 import random
 import os
 from quotes_kelompok3 import quotesAgama, quotesPendidikan, quotesMotivasi, quotesPercintaan, quotesPolitik
-
+"""
+Disini data data yang berisikan quotes dari semua pilihan kami pisah didalam file yang berbeda
+oleh karena itu kita perlu memanggil file tersebut dan di import sesuai dengan variabel yang di
+buat untuk masing masing opsi dan isi quotes nya
+"""
 aktif: bool = True
 
 daftarOpsi = [
