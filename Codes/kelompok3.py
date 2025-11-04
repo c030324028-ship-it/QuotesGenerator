@@ -37,15 +37,19 @@ def Menu():
     """
     os.system('cls')
     print("====== Quotes Generator =======")
-    print("Jenis quotes")
-    print("1. Agama")
-    print("2. Pendidikan")
-    print("3. Motivasi")
-    print("4. Percintaan")
-    print("5. Politik")
-    print("6. Random")
+    print("# Jenis quotes")
+    print("-> Agama")
+    print("-> Pendidikan")
+    print("-> Motivasi")
+    print("-> Percintaan")
+    print("-> Politik")
+    print("-> Random")
+    print("")
+    print("# Lainnya")
+    print("-> Keluar")
+    print("")
 
-    jenis = str(input("Pilih jenis Quotes yang anda inginkan (nama): ")).lower()
+    jenis = str(input("Pilih salah opsi di atas (teks): ")).lower()
 
     Opsi(jenis)
 
@@ -58,15 +62,28 @@ def Opsi(jenis: str):
     Memastikan jumlah berada dalam batas yang benar
     Memanggil fungsi Quotes() untuk menampilkan hasil
     """
-    if (jenis not in daftarOpsi):
-        input("Harap pilih salah satu opsi di atas! Tekan Enter untuk mengulang")
-    else:
+    global aktif
+    if (jenis in daftarOpsi):
         jumlah = int(input("Berapa jumlah quotes yang anda inginkan hari ini [1-5]?: "))
 
         if (jumlah > 5 or jumlah < 1):
             input("Harap masukkan batas jumlah yang sesuai! Tekan enter untuk mengulang")
         else:
             Quotes(jenis, jumlah)
+    else:
+        if (jenis == "keluar"):
+            opsi = str(input("Apakah yakin ingin keluar dari program? [ya/tidak]: "))
+
+            if (opsi == "ya" or opsi == "y"):
+                aktif = False
+                return False
+            elif (opsi == "tidak" or opsi == "t"):
+                aktif = True
+                return True
+            else:
+                print("Harap masukkan opsi yang benar!")
+        else:
+            input("Harap pilih salah satu opsi di atas! Tekan Enter untuk mengulang")
 
 def Konfirmasi():
     """
