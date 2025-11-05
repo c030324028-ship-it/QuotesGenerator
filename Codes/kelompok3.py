@@ -62,7 +62,6 @@ def Opsi(jenis: str):
     Memastikan jumlah berada dalam batas yang benar
     Memanggil fungsi Quotes() untuk menampilkan hasil
     """
-    global aktif
     if (jenis in daftarOpsi):
         jumlah = int(input("Berapa jumlah quotes yang anda inginkan hari ini [1-5]?: "))
 
@@ -72,16 +71,7 @@ def Opsi(jenis: str):
             Quotes(jenis, jumlah)
     else:
         if (jenis == "keluar"):
-            opsi = str(input("Apakah yakin ingin keluar dari program? [ya/tidak]: "))
-
-            if (opsi == "ya" or opsi == "y"):
-                aktif = False
-                return False
-            elif (opsi == "tidak" or opsi == "t"):
-                aktif = True
-                return True
-            else:
-                print("Harap masukkan opsi yang benar!")
+            Konfirmasi()
         else:
             input("Harap pilih salah satu opsi di atas! Tekan Enter untuk mengulang")
 
@@ -89,19 +79,19 @@ def Konfirmasi():
     """
     Function: Konfirmasi
     Menanyakan kepada pengguna apakah ingin melanjutkan program atau keluar
-    Jika "ya" atau "y", mengembalikan True agar loop tetap berjalan
-    Jika "tidak" atau "t", mengubah variabel global 'aktif' menjadi False untuk menghentikan program
+    Jika "tidak" atau "t", mengembalikan True agar loop tetap berjalan
+    Jika "ya" atau "y", mengubah variabel global 'aktif' menjadi False untuk menghentikan program
     Jika input tidak sesuai, menampilkan pesan kesalahan dan mengulang
     """
     global aktif
     while (True):
-        opsi = str(input("Apakah ingin melanjutkan program? [ya/tidak]: "))
+        opsi = str(input("Apakah ingin keluar dari program? [ya/tidak]: "))
 
         if (opsi == "ya" or opsi == "y"):
-            return True
-        elif (opsi == "tidak" or opsi == "t"):
             aktif = False
             return False
+        elif (opsi == "tidak" or opsi == "t"):
+            return True
         else:
             print("Harap masukkan opsi yang benar!")
 
