@@ -2,7 +2,7 @@ import random
 import os
 from quotes_kelompok3 import quotesAgama, quotesPendidikan, quotesMotivasi, quotesPercintaan, quotesPolitik
 """
-Disini data data yang berisikan quotes dari semua pilihan kami pisah didalam file yang berbeda
+Disini data data yang berisikan quotes dari semua pilihan kami pisah di dalam file yang berbeda
 oleh karena itu kita perlu memanggil file tersebut dan di import sesuai dengan variabel yang di
 buat untuk masing masing opsi dan isi quotes nya
 """
@@ -14,7 +14,8 @@ daftarOpsi = [
     "motivasi",
     "percintaan",
     "politik",
-    "random"
+    "random",
+    "acak"
 ]
 
 def QuotesGenerator():
@@ -43,7 +44,7 @@ def Menu():
     print("-> Motivasi")
     print("-> Percintaan")
     print("-> Politik")
-    print("-> Random")
+    print("-> Random/Acak")
     print("")
     print("# Lainnya")
     print("-> Keluar")
@@ -96,6 +97,7 @@ def Konfirmasi():
             print("Harap masukkan opsi yang benar!")
 
 def Quotes(opsi, jumlah):
+    os.system("cls")
     """
     Function: Quotes
     Menentukan daftar quotes sesuai pilihan pengguna:
@@ -116,7 +118,7 @@ def Quotes(opsi, jumlah):
             listQuotes = quotesPercintaan
         case "politik":
             listQuotes = quotesPolitik
-        case "random":
+        case "random" | "acak":
             listQuotes = [*quotesAgama, *quotesPendidikan, *quotesMotivasi, *quotesPercintaan, *quotesPolitik]
 
     quotes = random.sample(listQuotes, k=jumlah)
