@@ -2,7 +2,7 @@ import random
 import os
 from quotes_kelompok3 import quotesAgama, quotesPendidikan, quotesMotivasi, quotesPercintaan, quotesPolitik
 """
-Disini data data yang berisikan quotes dari semua pilihan kami pisah didalam file yang berbeda
+Disini data data yang berisikan quotes dari semua pilihan kami pisah di dalam file yang berbeda
 oleh karena itu kita perlu memanggil file tersebut dan di import sesuai dengan variabel yang di
 buat untuk masing masing opsi dan isi quotes nya
 """
@@ -14,7 +14,8 @@ daftarOpsi = [
     "motivasi",
     "percintaan",
     "politik",
-    "random"
+    "random",
+    "acak"
 ]
 
 def QuotesGenerator():
@@ -37,15 +38,19 @@ def Menu():
     """
     os.system('cls')
     print("====== Quotes Generator =======")
-    print("Jenis quotes")
-    print("1. Agama")
-    print("2. Pendidikan")
-    print("3. Motivasi")
-    print("4. Percintaan")
-    print("5. Politik")
-    print("6. Random")
+    print("# Jenis quotes")
+    print("-> Agama")
+    print("-> Pendidikan")
+    print("-> Motivasi")
+    print("-> Percintaan")
+    print("-> Politik")
+    print("-> Random/Acak")
+    print("")
+    print("# Lainnya")
+    print("-> Keluar")
+    print("")
 
-    jenis = str(input("Pilih jenis Quotes yang anda inginkan (nama): ")).lower()
+    jenis = str(input("Pilih salah opsi di atas (teks): ")).lower()
 
     Opsi(jenis)
 
@@ -58,37 +63,41 @@ def Opsi(jenis: str):
     Memastikan jumlah berada dalam batas yang benar
     Memanggil fungsi Quotes() untuk menampilkan hasil
     """
-    if (jenis not in daftarOpsi):
-        input("Harap pilih salah satu opsi di atas! Tekan Enter untuk mengulang")
-    else:
+    if (jenis in daftarOpsi):
         jumlah = int(input("Berapa jumlah quotes yang anda inginkan hari ini [1-5]?: "))
 
         if (jumlah > 5 or jumlah < 1):
             input("Harap masukkan batas jumlah yang sesuai! Tekan enter untuk mengulang")
         else:
             Quotes(jenis, jumlah)
+    else:
+        if (jenis == "keluar"):
+            Konfirmasi()
+        else:
+            input("Harap pilih salah satu opsi di atas! Tekan Enter untuk mengulang")
 
 def Konfirmasi():
     """
     Function: Konfirmasi
     Menanyakan kepada pengguna apakah ingin melanjutkan program atau keluar
-    Jika "ya" atau "y", mengembalikan True agar loop tetap berjalan
-    Jika "tidak" atau "t", mengubah variabel global 'aktif' menjadi False untuk menghentikan program
+    Jika "tidak" atau "t", mengembalikan True agar loop tetap berjalan
+    Jika "ya" atau "y", mengubah variabel global 'aktif' menjadi False untuk menghentikan program
     Jika input tidak sesuai, menampilkan pesan kesalahan dan mengulang
     """
     global aktif
     while (True):
-        opsi = str(input("Apakah ingin melanjutkan program? [ya/tidak]: "))
+        opsi = str(input("Apakah ingin keluar dari program? [ya/tidak]: "))
 
         if (opsi == "ya" or opsi == "y"):
-            return True
-        elif (opsi == "tidak" or opsi == "t"):
             aktif = False
             return False
+        elif (opsi == "tidak" or opsi == "t"):
+            return True
         else:
             print("Harap masukkan opsi yang benar!")
 
 def Quotes(opsi, jumlah):
+    os.system("cls")
     """
     Function: Quotes
     Menentukan daftar quotes sesuai pilihan pengguna:
@@ -109,7 +118,7 @@ def Quotes(opsi, jumlah):
             listQuotes = quotesPercintaan
         case "politik":
             listQuotes = quotesPolitik
-        case "random":
+        case "random" | "acak":
             listQuotes = [*quotesAgama, *quotesPendidikan, *quotesMotivasi, *quotesPercintaan, *quotesPolitik]
 
     quotes = random.sample(listQuotes, k=jumlah)
